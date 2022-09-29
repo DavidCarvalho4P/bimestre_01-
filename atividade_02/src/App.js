@@ -1,31 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
-import Eventos from './Componentes/Evento';
-import TipoIngresso from './Componentes/TipoIngresso';
+import Eventos from './components/Eventos';
+import TipoIngresso from './components/TipoIngresso';
+
 function App() {
-  return (
-    <div className="App">
-      <Eventos
-      nome="GUSTAVO LIMA" 
-      data="2 de agosto de 2019 (Sexta Feira)"
-      hora="18h30- 00h00"
+    return ( 
+      <div className = "App" >
+
+      <Eventos 
+      nome="Gustavo Lima" 
+      data="2 de agosto de 2019(Sexta-Feira)" 
+      horario="18h30 - 00h00"
       local="Parque do Povo"
-      cidade="Campina Grande/PR"
-      genero="Artes em forma de SERTANEJO"
+      cidade="Campinas Grande/PR"
+      genero="Arte em forma de SERTANEJO"
       />
-      <TipoIngresso 
-      ingresso="Ingressos"
-      ingresso1="Camarote (open bar)"
+      <TipoIngresso
+      ingressos="Ingressos"
+      ingressos1="Camarote(open bar)"
       preco1="R$150,00"
-      ingresso2="Camarote"
+      ingressos2="Camarote"
       preco2="R$100,00"
-      ingresso3="Front-stage"
+      ingressos3="Front-stage"
       preco3="R$60,00"
-      ingresso4="Pista"
+      ingressos4="Pista"
       preco4="R$30,00"
       />
-    </div>
-  );
+
+      </div> 
+    );
 }
 
 export default App;
